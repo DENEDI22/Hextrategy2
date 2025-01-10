@@ -24,11 +24,6 @@ namespace DefaultNamespace
             neighbours.ForEach(neighbour => neighbour.NeighbourCollapsed());
             GameObject.Instantiate(_TileToCollapseInto.prefab, transform);
         }
-
-        private void Update()
-        {
-            neighbourSearchingOffsets.ForEach(x => Debug.DrawRay(transform.position + Vector3.up + x, Vector3.down));
-        }
         
         public void TryFindNeighbours()
         {
