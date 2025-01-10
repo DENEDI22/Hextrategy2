@@ -7,7 +7,9 @@ namespace DefaultNamespace
 {
     public class Tile : MonoBehaviour
     {
-        [Tooltip("Leave 6 for maximum enthropy and put 0 to make it a fixed tile that won't be affected by generation")] public int enthropy = 6;
+        [Tooltip("Leave 6 for maximum enthropy and put 0 to make it a fixed tile that won't be affected by generation")]
+        public int enthropy = 6;
+
         [SerializeField] private List<Vector3> neighbourSearchingOffsets;
         [SerializeField] public List<Tile> neighbours;
         public TileInformation currentTile;
@@ -24,7 +26,7 @@ namespace DefaultNamespace
             neighbours.ForEach(neighbour => neighbour.NeighbourCollapsed());
             GameObject.Instantiate(_TileToCollapseInto.prefab, transform);
         }
-        
+
         public void TryFindNeighbours()
         {
             RaycastHit hit;
@@ -36,7 +38,7 @@ namespace DefaultNamespace
                 }
             }
         }
-        
+
         public void NeighbourCollapsed()
         {
             if (enthropy <= 1) return;
