@@ -10,5 +10,6 @@ namespace ScriptableObjects
         public GameObject prefab;
         public List<TileInformation> allowedNeighbours;
         public bool canHaveRiver;
+        public List<TileInformation> availableBuildings;
     }
 }

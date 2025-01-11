@@ -39,6 +39,11 @@ namespace DefaultNamespace
             }
         }
 
+        public void Build(TileInformation _tileToBuild)
+        {
+            
+        }
+        
         public void NeighbourCollapsed()
         {
             if (enthropy <= 1) return;
