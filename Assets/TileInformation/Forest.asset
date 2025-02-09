@@ -13,6 +13,21 @@ MonoBehaviour:
   m_Name: Forest
   m_EditorClassIdentifier: 
   tileName: Forest
+  recoursesPerTick:
+    Money: 0
+    Food: 0
+    Wood: 20
+    Minerals: 0
+  recoursesToOccupy:
+    Money: 100
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToDevelop:
+    Money: 0
+    Food: 10
+    Wood: 0
+    Minerals: 0
   prefab: {fileID: 1912280425927438893, guid: 80c65bee80e1b1c46ad3e8e25437d134, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: 9dc6b2c4d4149ae49ba577bf16c4af43, type: 2}
@@ -21,3 +36,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f89c71de3431bc9498cef7f8c9138582, type: 2}
   - {fileID: 11400000}
   canHaveRiver: 0
+  availableBuildings:
+  - {fileID: 11400000, guid: 87c04de889da35647b7a3f5b45ef7281, type: 2}
+  - {fileID: 11400000, guid: 91315bc8db40d5645a7d4900255e0dd6, type: 2}

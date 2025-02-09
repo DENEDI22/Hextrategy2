@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: Capital
   m_EditorClassIdentifier: 
   tileName: Capital
+  recoursesPerTick:
+    Money: 1
+    Food: 1
+    Wood: 1
+    Minerals: 1
+  recoursesToOccupy:
+    Money: 0
+    Food: 5435
+    Wood: 0
+    Minerals: 3
+  recoursesToDevelop:
+    Money: 0
+    Food: 35
+    Wood: 3
+    Minerals: 0
   prefab: {fileID: 1912280425927438893, guid: d97e0fdccda2f0744a470d54abcbe719, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: 9dc6b2c4d4149ae49ba577bf16c4af43, type: 2}
   - {fileID: 11400000, guid: 385bcdab2d950d948973ea44fbb97273, type: 2}
   - {fileID: 11400000, guid: f89c71de3431bc9498cef7f8c9138582, type: 2}
   canHaveRiver: 0
+  availableBuildings: []

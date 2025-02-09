@@ -13,6 +13,21 @@ MonoBehaviour:
   m_Name: Field
   m_EditorClassIdentifier: 
   tileName: Field
+  recoursesPerTick:
+    Money: 12
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToOccupy:
+    Money: 50
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToDevelop:
+    Money: 0
+    Food: 21
+    Wood: 0
+    Minerals: 22
   prefab: {fileID: 7169135004922863839, guid: 217ca5f08994a6a479e17a27309bae5b, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: 385bcdab2d950d948973ea44fbb97273, type: 2}
@@ -20,3 +35,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87c04de889da35647b7a3f5b45ef7281, type: 2}
   - {fileID: 11400000}
   canHaveRiver: 0
+  availableBuildings:
+  - {fileID: 11400000, guid: 87c04de889da35647b7a3f5b45ef7281, type: 2}

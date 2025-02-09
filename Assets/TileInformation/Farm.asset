@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: Farm
   m_EditorClassIdentifier: 
   tileName: Farm
-  prefab: {fileID: 1912280425927438893, guid: 73867721c7c113b4389609ce6359f1bf, type: 3}
+  recoursesPerTick:
+    Money: 0
+    Food: 10
+    Wood: 0
+    Minerals: 0
+  recoursesToOccupy:
+    Money: 50
+    Food: 0
+    Wood: 3
+    Minerals: 3
+  recoursesToDevelop:
+    Money: 0
+    Food: 3
+    Wood: 3
+    Minerals: 0
+  prefab: {fileID: 8283899061365690238, guid: 5fc047624ccc38a4eb3401ee458278cb, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: 9dc6b2c4d4149ae49ba577bf16c4af43, type: 2}
   - {fileID: 11400000, guid: 385bcdab2d950d948973ea44fbb97273, type: 2}
   - {fileID: 11400000, guid: f89c71de3431bc9498cef7f8c9138582, type: 2}
   canHaveRiver: 0
+  availableBuildings: []

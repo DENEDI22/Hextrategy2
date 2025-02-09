@@ -7,6 +7,9 @@ namespace ScriptableObjects
     public class TileInformation : ScriptableObject
     {
         public string tileName;
+        public RecoursesContainer recoursesPerTick;
+        public RecoursesContainer recoursesToOccupy;
+        public RecoursesContainer recoursesToDevelop;
         public GameObject prefab;
         public List<TileInformation> allowedNeighbours;
         public bool canHaveRiver;

@@ -1,4 +1,5 @@
 ﻿using System;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ namespace DefaultNamespace
         [SerializeField] private Canvas canvas;
         [SerializeField] private float radius;
         [SerializeField] private Vector3 offset;
-
+        
         private void ArrangeButtons()
         {
             Button[] allButtons = GetComponentsInChildren<Button>();
@@ -27,10 +28,26 @@ namespace DefaultNamespace
             }
         }
 
-        public void AddButton()
+        public void AddButton(string _textForButton, out Button _thisButton)
         {
             GameObject button = Instantiate(buttonPrefab, transform);
-            button.GetComponentInChildren<TextMeshProUGUI>().text = "Generated";
+            button.GetComponentInChildren<TextMeshProUGUI>().text = _textForButton;
+            _thisButton = button.GetComponent<Button>();
+            ArrangeButtons();
+        }
+        
+        public void AddButton(string _textForButton)
+        {
+            GameObject button = Instantiate(buttonPrefab, transform);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = _textForButton;
+            ArrangeButtons();
+        }
+        
+        public void AddButton(Sprite _buttonSprite)
+        {
+            GameObject button = Instantiate(buttonPrefab, transform);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = string.Empty;
+            button.GetComponent<Image>().sprite = _buttonSprite;
             ArrangeButtons();
         }
 

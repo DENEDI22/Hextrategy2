@@ -25,7 +25,7 @@ namespace DefaultNamespace
 
         private void GenerateTiles()
         {
-            var nextTile = FindLowestEnthropy();
+            Tile nextTile = FindLowestEnthropy();
             while (nextTile!=null)
             {
                 List<TileInformation> possibleCollapsionResult;
@@ -46,13 +46,13 @@ namespace DefaultNamespace
 
         private Tile FindLowestEnthropy()
         {
-            var nonGeneratedTiles = allTilesOnTheMap.ToList().FindAll(tile => tile.isCollapsed == false);
+            List<Tile> nonGeneratedTiles = allTilesOnTheMap.ToList().FindAll(tile => tile.isCollapsed == false);
             if (nonGeneratedTiles.Count == 0)
             {
                 return null;
             }
             int minEnthropy = nonGeneratedTiles.Min(tile => tile.enthropy);
-            var minEnthropyTile = nonGeneratedTiles.FindAll(tile => tile.enthropy == minEnthropy).ToArray();
+            Tile[] minEnthropyTile = nonGeneratedTiles.FindAll(tile => tile.enthropy == minEnthropy).ToArray();
             return minEnthropyTile.Length == 1
                 ? minEnthropyTile[0]
                 : minEnthropyTile[Random.Range(0, minEnthropyTile.Length)];

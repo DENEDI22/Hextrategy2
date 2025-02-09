@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919e6614f9544a08956695e531c1498d, type: 3}
+  m_Name: Mines 3
+  m_EditorClassIdentifier: 
+  tileName: Mine Level 1
+  recoursesPerTick:
+    Money: 0
+    Food: 0
+    Wood: 0
+    Minerals: 30
+  recoursesToOccupy:
+    Money: 120
+    Food: 0
+    Wood: 60
+    Minerals: 30
+  recoursesToDevelop:
+    Money: 40
+    Food: 20
+    Wood: 10
+    Minerals: 0
+  prefab: {fileID: 0}
+  allowedNeighbours: []
+  canHaveRiver: 0
+  availableBuildings: []

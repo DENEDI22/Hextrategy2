@@ -13,6 +13,21 @@ MonoBehaviour:
   m_Name: Mountain
   m_EditorClassIdentifier: 
   tileName: Mountain
+  recoursesPerTick:
+    Money: 0
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToOccupy:
+    Money: 20
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToDevelop:
+    Money: 0
+    Food: 0
+    Wood: 0
+    Minerals: 0
   prefab: {fileID: 1912280425927438893, guid: 704c564410a97904abaa4ab696fd2533, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: 304f5265a9cea8549a97ab3bb5b1ae27, type: 2}
@@ -20,3 +35,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9dc6b2c4d4149ae49ba577bf16c4af43, type: 2}
   - {fileID: 11400000}
   canHaveRiver: 0
+  availableBuildings:
+  - {fileID: 11400000, guid: 304f5265a9cea8549a97ab3bb5b1ae27, type: 2}

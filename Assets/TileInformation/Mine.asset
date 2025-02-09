@@ -13,9 +13,25 @@ MonoBehaviour:
   m_Name: Mine
   m_EditorClassIdentifier: 
   tileName: Mine
+  recoursesPerTick:
+    Money: 0
+    Food: 0
+    Wood: 0
+    Minerals: 10
+  recoursesToOccupy:
+    Money: 100
+    Food: 0
+    Wood: 0
+    Minerals: 0
+  recoursesToDevelop:
+    Money: 0
+    Food: 50
+    Wood: 0
+    Minerals: 0
   prefab: {fileID: 1912280425927438893, guid: de135eaf73b38064785cd50921d4bbb8, type: 3}
   allowedNeighbours:
   - {fileID: 11400000, guid: f89c71de3431bc9498cef7f8c9138582, type: 2}
   - {fileID: 11400000, guid: 9dc6b2c4d4149ae49ba577bf16c4af43, type: 2}
   - {fileID: 11400000, guid: 385bcdab2d950d948973ea44fbb97273, type: 2}
   canHaveRiver: 0
+  availableBuildings: []
